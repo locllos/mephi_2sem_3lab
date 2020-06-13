@@ -33,62 +33,27 @@ public:
 
 	bool operator > (super_pair& super_pair_c)
 	{
-		if (this->priority > super_pair_c.priority)
-		{
-			return true;
-		}
-		else
-		{
-			return  false;
-		}
+		return (this->priority > super_pair_c.priority);
 	}
 
 	bool operator >= (super_pair& super_pair_c)
 	{
-		if (this->priority >= super_pair_c.priority)
-		{
-			return true;
-		}
-		else
-		{
-			return  false;
-		}
+		return (this->priority >= super_pair_c.priority);
 	}
 
 	bool operator < (super_pair& super_pair_c)
 	{
-		if (this->priority < super_pair_c.priority)
-		{
-			return true;
-		}
-		else
-		{
-			return  false;
-		}
+		return (this->priority < super_pair_c.priority);
 	}
 
 	bool operator <= (super_pair& super_pair_c)
 	{
-		if (this->priority <= super_pair_c.priority)
-		{
-			return true;
-		}
-		else
-		{
-			return  false;
-		}
+		return (this->priority <= super_pair_c.priority);
 	}
 
 	bool operator == (super_pair& super_pair_c)
 	{
-		if (this->priority == super_pair_c.priority && this->value == super_pair_c.value)
-		{
-			return true;
-		}
-		else
-		{
-			return  false;
-		}
+		return (this->priority == super_pair_c.priority && this->value == super_pair_c.value);
 	}
 
 	~super_pair() = default;
